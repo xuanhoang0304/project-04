@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-cl: #ff5b2e;
+    --title-cl: #000958;
+    --text-primary-cl: #656689;
+    --Poppins-font: "Poppins", sans-serif;
+    --Sora-font: "Sora", sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 60px;
+
+    display: inline-block;
+    min-width: 117px;
+    height: var(--height);
+    background: #fff;
+    color: var(--text-primary-cl);
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    font-family: var(--Poppins-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: var(--height);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section__heading {
+    color: var(--title-cl);
+    font-family: var(--Sora-font);
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.section__desc {
+    color: var(--text-primary-cl);
+    font-family: var(--Poppins-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+.desc-lv2 {
+    font-size: 1.6rem;
+    line-height: 1.87;
+}
+
+.section__desc-name {
+    color: var(--title-cl);
+    font-family: var(--Sora-font);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* Body */
+.header {
+    padding-top: 26px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link {
+    padding: 4px 36px;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+    color: var(--title-cl);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header__btn {
+    --height: 50px;
+
+    border: 1px solid var(--title-cl);
+}

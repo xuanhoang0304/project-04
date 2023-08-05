@@ -959,10 +959,232 @@ a {
     margin-right: 12px;
 }
 
-.pricing-item__item:nth-child(4) ~ .pricing-item__item::before{
+.pricing-item__item:nth-child(4) ~ .pricing-item__item::before {
     opacity: 0.4;
 }
 
-.pricing-item:last-child .pricing-item__item:nth-child(4) ~ .pricing-item__item::before{
+.pricing-item:last-child
+    .pricing-item__item:nth-child(4)
+    ~ .pricing-item__item::before {
     opacity: 1;
+}
+
+/* Review */
+.review {
+    padding: 53px 0;
+}
+.review__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+.review__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 209, 196, 1);
+    background: transparent;
+    color: var(--primary-cl);
+}
+
+.review__control:hover {
+    cursor: pointer;
+    background: var(--primary-cl);
+    border-color: var(--primary-cl);
+    color: #fff;
+}
+.review__body {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.review-item__media {
+    position: relative;
+    flex-shrink: 0;
+    width: 274px;
+    border-radius: 137px;
+}
+
+.review-item__media::after {
+    content: "";
+    position: absolute;
+    height: 90%;
+    inset: auto 0 0 0;
+    background: #ffda54;
+    border-radius: inherit;
+}
+
+.review-item__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.review-item__quote {
+    margin-top: 24px;
+    width: 553px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55; /* 155.556% */
+}
+
+.review-item__author {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: var(--Sora-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.review-item__author::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 8px;
+}
+
+.review__dots {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #ff5b2e;
+}
+
+.review__dot:hover {
+    background: var(--primary-cl);
+    cursor: pointer;
+}
+
+.review__dot--active {
+    width: 24px;
+    background: var(--primary-cl);
+    pointer-events: none;
+}
+
+/* Blog */
+.blog {
+    padding: 77px 0;
+    margin-bottom: 54px;
+}
+
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+}
+.blog__heading {
+    margin-top: 31px;
+}
+
+.blog__top--right {
+    padding-right: 73px;
+}
+
+.blog_desc {
+    color: #656689;
+    width: 350px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.blog__cta {
+    --height: 56px;
+
+    margin-top: 24px;
+    min-width: 182px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+}
+.blog__cta:hover {
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    background: var(--primary-cl);
+    color: #fff;
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-item:hover .blog-item__img {
+    transform: scale(1.1);
+}
+
+.blog-item:nth-child(2) .blog-item__top {
+    background: #ff997e;
+}
+
+.blog-item:last-child .blog-item__top {
+    background: #5bd6e2;
+}
+
+.blog-item__top {
+    padding: 24px 0 0 36px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+.blog-item__img-wrap {
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.blog-item__img {
+    width: 100%;
+    display: block;
+    transition: 0.25s;
+}
+.blog-item__date {
+    color: #fff;
+    font-family: var(--Sora-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21; /* 121.429% */
+}
+.blog-item__body {
+    margin-top: 28px;
+}
+
+.blog-item__heading {
+    color: #000958;
+    font-family: var(--Sora-font);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54; /* 154.545% */
+}
+.blog-item__desc {
+    --line: 3;
+
+    margin-top: 16px;
 }
